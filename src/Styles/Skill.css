@@ -1,0 +1,21 @@
+.skills {
+  position: realative;
+  display: flex;
+  cursor: pointer;
+}
+
+.skill-logo {
+  border-radius: 9999px;
+  border: 1px solid gray;
+  object-fit: cover;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .skill-logo {
+    width: 50px;
+    height: 50px;
+  }
+}

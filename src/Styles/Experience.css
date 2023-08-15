@@ -1,0 +1,58 @@
+.app__experience {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  text-align: left;
+  align-items: center;
+  height: 100vh;
+  max-width: 100%;
+  padding: 0 1.25rem;
+  justify-content: space-evenly;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+.experience__title {
+  position: absolute;
+  top: 10%;
+  margin-top: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  font-size: 1.5rem;
+  color: gray;
+  text-align: center;
+}
+.experience__content {
+  width: 80rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow-x: scroll;
+  padding: 2.5rem;
+  scroll-snap-type: x mandatory;
+}
+
+.experience__content::-webkit-scrollbar {
+  height: 10px;
+}
+.experience__content::-webkit-scrollbar-track {
+  background-color: #242424; /* Replace #ccc with the desired track color */
+}
+
+.experience__content::-webkit-scrollbar-thumb {
+  background-color: #f7ab0a;
+}
+
+@media (max-width: 768px) {
+  .app__experience {
+    flex-direction: row;
+  }
+  .experience__title {
+    font-size: 0.8rem;
+  }
+
+  .experience__content::-webkit-scrollbar {
+    height: 3px;
+  }
+}

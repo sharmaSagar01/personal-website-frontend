@@ -1,0 +1,40 @@
+.app__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  top: 0;
+  position: sticky;
+  max-width: 80rem;
+  margin: auto;
+  z-index: 20;
+  padding: 1.25rem;
+}
+
+.header__logo-section {
+  display: flex;
+  align-items: center;
+}
+
+.header__second-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: gray;
+  cursor: pointer;
+}
+.contact-info {
+  display: inline-flex;
+  text-transform: uppercase;
+  color: gray;
+  font-size: 15px;
+}
+
+.email-icon {
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .contact-info {
+    display: none;
+  }
+}

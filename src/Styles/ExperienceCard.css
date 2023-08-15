@@ -1,0 +1,141 @@
+.experience__card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  align-items: center;
+  flex-shrink: 0;
+  width: 450px;
+  scroll-snap-align: center;
+  background: #292929;
+  padding: 1.5rem;
+  margin: 0.25rem 0.8rem;
+  opacity: 0.5;
+}
+
+.experience__card:hover {
+  opacity: 1;
+  cursor: pointer;
+  transition-property: opacity;
+  transition-duration: 200ms;
+  overflow: hidden;
+}
+
+.experience__card > * + * {
+  margin-top: 1.75rem;
+}
+
+.company-logo {
+  width: 100px;
+  height: 100px;
+  border-radius: 9999px;
+  object-fit: cover;
+  object-position: center;
+}
+.work-content {
+  padding: 1.25rem;
+}
+
+.company-position {
+  font-size: 1.5rem;
+  font-weight: 200;
+}
+
+.company-name {
+  font-weight: bold;
+  font-size: 1rem;
+  margin-top: 0.25rem;
+}
+.tech-used {
+  display: flex;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.tech-used > * + * {
+  margin-left: 0.1rem;
+}
+.tech-icon {
+  height: 25px;
+  width: 40px;
+  /* border-radius: 50%; */
+}
+
+.work-duration {
+  text-transform: uppercase;
+  padding: 1rem 0;
+  color: gray;
+  font-size: 1rem;
+}
+.work-description {
+  list-style-type: disc;
+  margin-left: 1.25rem;
+  font-size: 1rem;
+  text-align: justify;
+  overflow-y: scroll;
+  height: 320px;
+  padding: 1.25rem;
+}
+
+.work-description::-webkit-scrollbar {
+  width: 5px;
+}
+.work-description::-webkit-scrollbar-track {
+  background-color: #242424;
+}
+.work-description::-webkit-scrollbar-thumb {
+  background-color: #f7ab0a;
+}
+.work-description > li {
+  margin-top: 0.8rem;
+}
+
+@media (max-width: 768px) {
+  .experience__card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    align-items: center;
+    flex-shrink: 0;
+    width: 300px;
+    scroll-snap-align: center;
+    background: #292929;
+    padding: 1.5rem;
+    margin: 0.2rem 0.4rem;
+  }
+  .company-logo {
+    width: 60px;
+    height: 60px;
+    border-radius: 9999px;
+  }
+  .work-content {
+    padding: 0px;
+  }
+  .company-position {
+    font-size: 1.25rem;
+    font-weight: 200;
+  }
+  .company-name {
+    font-weight: bold;
+    font-size: 0.8rem;
+    margin-top: 0.2rem;
+  }
+  .tech-icon {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+  }
+
+  .work-duration {
+    text-transform: uppercase;
+    padding: 0.2rem 0;
+    color: gray;
+    font-size: 0.8rem;
+  }
+  .work-description {
+    font-size: 0.7rem;
+    margin-left: 0.8rem;
+  }
+  .work-description > li {
+    margin-top: 0.5rem;
+    text-align: justify;
+  }
+}

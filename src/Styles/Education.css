@@ -1,0 +1,43 @@
+.app__education {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  text-align: left;
+  align-items: center;
+  height: 100vh;
+  max-width: 100%;
+  padding: 0 1.25rem;
+  justify-content: space-evenly;
+  margin: auto;
+  flex-wrap: wrap;
+}
+.education__title {
+  position: absolute;
+  top: 10%;
+  margin-top: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  font-size: 1.5rem;
+  color: gray;
+  text-align: center;
+}
+.education__content {
+  width: 50rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2.5rem;
+}
+@media (max-width: 768px) {
+  .app__education {
+    flex-direction: row;
+  }
+  .education__title {
+    font-size: 0.8rem;
+  }
+  .education__content {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}

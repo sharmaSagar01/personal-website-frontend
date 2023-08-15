@@ -1,0 +1,45 @@
+.app__skills {
+  height: 100vh;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  max-width: 2000px;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.skills__title {
+  position: absolute;
+  top: 10%;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  color: gray;
+  font-size: 1.5rem;
+}
+
+.skills__sub-title {
+  position: absolute;
+  top: 14%;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: gray;
+}
+
+.skills__content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Creates 4 equal-width columns */
+  gap: 10px; /* Sets a gap of 5 pixels between grid items */
+}
+
+@media (max-width: 768px) {
+  .skills__title {
+    font-size: 0.8rem;
+  }
+  .skills__sub-title {
+    font-size: 0.6rem;
+  }
+}

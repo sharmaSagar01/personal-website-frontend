@@ -1,0 +1,101 @@
+.education__card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  align-items: center;
+  width: 300px;
+  background: #292929;
+  padding: 0.9rem;
+  margin: 0.25rem 0.8rem;
+  opacity: 0.5;
+}
+
+.education__card:hover {
+  opacity: 1;
+  cursor: pointer;
+  transition-property: opacity;
+  transition-duration: 200ms;
+  overflow: hidden;
+}
+
+.education__card > * + * {
+  margin-top: 0.6rem;
+}
+
+.university-logo {
+  width: 150px;
+  height: 65px;
+  object-fit: contain;
+  object-position: center;
+}
+
+.education-details {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.graduation-logo {
+  width: 50px;
+  height: 70px;
+  padding-right: 20px;
+}
+
+.education-title {
+  font-size: 1rem;
+  font-weight: bold;
+}
+.university-name {
+  font-weight: bold;
+  font-size: 0.8rem;
+  margin-top: 0.7rem;
+  text-transform: uppercase;
+}
+.education-duration {
+  text-transform: uppercase;
+  padding: 1rem 0;
+  color: gray;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .education__card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    align-items: center;
+    width: 300px;
+    padding: 0.8rem;
+    /* margin: 0.2rem 0.4rem; */
+  }
+
+  .university-logo {
+    width: 100px;
+    height: 60px;
+  }
+
+  .education-title {
+    font-size: 0.8rem;
+    font-weight: bold;
+  }
+  .graduation-logo {
+    width: 40px;
+    height: 50px;
+    padding-right: 20px;
+  }
+
+  .university-name {
+    font-weight: bold;
+    margin-top: 0.5rem;
+    font-size: 0.6rem;
+    text-transform: uppercase;
+  }
+
+  .education-duration {
+    padding: 0.2rem 0;
+    font-size: 0.6rem;
+    margin-top: 0.8rem;
+  }
+}

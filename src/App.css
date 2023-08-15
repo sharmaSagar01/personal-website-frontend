@@ -1,0 +1,82 @@
+.app {
+  background-color: rgb(36, 36, 36);
+  color: white;
+  height: 100vh;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  z-index: 0;
+  scrollbar-width: thin; /* "thin" for a narrower scrollbar or "auto" to use the browser's default */
+  scrollbar-color: #ccc transparent;
+}
+
+.app::-webkit-scrollbar {
+  width: 10px;
+}
+.app::-webkit-scrollbar-track {
+  background-color: #242424; /* Replace #ccc with the desired track color */
+}
+
+.app::-webkit-scrollbar-thumb {
+  background-color: #f7ab0a;
+}
+#home {
+  scroll-snap-align: start;
+}
+
+#about {
+  scroll-snap-align: center;
+}
+
+#experience {
+  scroll-snap-align: center;
+}
+
+#education {
+  scroll-snap-align: center;
+}
+
+#skills {
+  scroll-snap-align: start;
+}
+
+#projects {
+  scroll-snap-align: start;
+}
+
+#contact {
+  scroll-snap-align: start;
+}
+
+.app > a {
+  text-decoration: none;
+}
+.footer {
+  position: sticky;
+  bottom: 5px;
+  width: 100%;
+  cursor: pointer;
+  padding: 0.4rem;
+}
+.footer > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer > div > img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.footer > div > p {
+  color: white;
+  padding-left: 0.8rem;
+}
+
+@media (max-width: 768px) {
+  .app::-webkit-scrollbar {
+    width: 3px;
+  }
+}
